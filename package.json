@@ -2,7 +2,7 @@
 	"name": "chromium-clangformat",
 	"displayName": "chromium-clangformat",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "akristupas",
 	"repository": "https://github.com/arg0d/chromium-clangformat.git",
 	"engines": {
