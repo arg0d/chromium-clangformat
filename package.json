@@ -4,6 +4,7 @@
 	"description": "",
 	"version": "0.0.1",
 	"publisher": "akristupas",
+	"repository": "https://github.com/arg0d/chromium-clangformat.git",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
