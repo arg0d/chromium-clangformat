@@ -9,7 +9,9 @@ function formatCode() {
   let [findPython, pythonName] = process.platform == 'win32' ?
       ['where python', 'python.bat'] :
       ['which python', 'python'];
-  let toolsPath = path.dirname(child.execSync(findPython).toString());
+  // There could be multiple pythons in path, so pick the first one
+  let output = child.execSync(findPython).toString().split(/\r?\n/)[0];
+  let toolsPath = path.dirname(output);
 
   let python = path.normalize(toolsPath + '/' + pythonName);
   let clangFormat = path.normalize(toolsPath + '/clang_format.py');
